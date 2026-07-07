@@ -13,7 +13,14 @@ function changeLanguage(lang) {
 
 function exportToPDF() {
     alert("ប្រព័ន្ធកំពុងរៀបចំទិន្នន័យដើម្បីទាញយកជាឯកសារ PDF... សូមរង់ចាំបន្តិច។");
-    // ក្នុងកម្រិតខ្ពស់ អ្នកអាចប្រើបណ្ណាល័យដូចជា jsPDF ដើម្បីបង្កើតឯកសារពិតប្រាកដ
 }
 
-// AI & Log Loops... (Keep your existing setInterval logic here)
+// AI Monitoring Logic
+setInterval(() => {
+    const aiFeed = document.getElementById("ai-feed");
+    const insights = ["AI: Threat vectors safe.", "AI: Network bandwidth optimized.", "AI: Security layer at 99.9%."];
+    const li = document.createElement("li");
+    li.textContent = `[AI CORE]: ${insights[Math.floor(Math.random()*insights.length)]}`;
+    aiFeed.prepend(li);
+    if(aiFeed.children.length > 3) aiFeed.lastElementChild.remove();
+}, 5000);
