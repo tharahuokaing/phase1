@@ -39,7 +39,11 @@
                 </tr>
             </tbody>
         </table>
-        <button onclick="exportToPDF()">📄 ទាញយករបាយការណ៍ជា PDF</button>
+        
+        <button onclick="exportToPDF()">📄 ទាញយករបាយការណ៍ PDF</button>
+        <button onclick="approvePhase2()" style="background: #c5a059; color: #000; border: none; padding: 10px 20px; cursor: pointer; margin-left: 10px;">
+            ✅ អនុម័តដំណាក់កាលទី ២ (Approve Phase 2)
+        </button>
     </section>
 
     <section class="phase-card">
@@ -54,7 +58,7 @@
         <div class="ai-box">
             <h4>🤖 វិភាគដោយ AI CORE</h4>
             <ul id="ai-feed">
-                <li>[SYSTEM]: កំពុងវិភាគសុវត្ថិភាពបណ្តាញ...</li>
+                <li>[SYSTEM]: កំពុងរង់ចាំការបញ្ជា...</li>
             </ul>
         </div>
         
@@ -66,6 +70,7 @@
 </div>
 
 <script src="script.js"></script>
+<script src="script1.js"></script>
 
 </body>
 </html>
