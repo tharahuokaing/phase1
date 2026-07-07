@@ -1,9 +1,130 @@
-:root { --bg-dark: #01050e; --accent-cyan: #00ffcc; --accent-red: #ff3366; --accent-gold: #c5a059; }
-body { background-color: var(--bg-dark); color: var(--accent-cyan); font-family: 'Courier New', monospace; padding: 20px; }
-.container { max-width: 1000px; margin: auto; background: rgba(13, 44, 84, 0.3); padding: 30px; border: 1px solid var(--accent-cyan); border-radius: 12px; }
-.success-banner { border: 1px solid var(--accent-cyan); padding: 15px; margin: 20px 0; text-align: center; }
-.ai-box { background: #000; padding: 15px; border: 1px solid var(--accent-gold); margin-top: 20px; }
-table { width: 100%; border-collapse: collapse; background: rgba(0, 0, 0, 0.4); }
-th, td { border: 1px solid var(--accent-cyan); padding: 15px; text-align: left; }
-button { background: transparent; border: 1px solid var(--accent-cyan); color: var(--accent-cyan); padding: 10px; cursor: pointer; }
-button:hover { background: var(--accent-cyan); color: #000; }
+/* =========================================================
+   HUOKAING THARA BANK - MODERN OPERATIONAL COMMAND STYLE
+   SPECIFICATION: FINANCIAL MONITORING TERMINAL
+========================================================= */
+
+:root {
+    --bg-dark: #01050e;
+    --panel-bg: rgba(13, 44, 84, 0.3);
+    --accent-cyan: #00ffcc;
+    --accent-red: #ff3366;
+    --accent-gold: #c5a059;
+    --text-color: #00ffcc;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--panel-bg);
+    padding: 30px;
+    border: 1px solid var(--accent-cyan);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px dashed var(--accent-gold);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 { 
+    color: var(--accent-red); 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 51, 102, 0.4);
+}
+
+h3 { color: var(--accent-gold); }
+
+/* Table Component */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+    border: 1px solid var(--accent-cyan);
+    padding: 15px;
+    text-align: left;
+}
+
+th { 
+    background: #0d2c54; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+/* Operational UI Modules */
+.success-banner {
+    background: rgba(13, 44, 84, 0.6);
+    border: 1px solid var(--accent-cyan);
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.phase-card {
+    border: 1px solid var(--accent-gold);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.ai-box { 
+    background: #000; 
+    padding: 15px; 
+    border: 1px solid var(--accent-gold); 
+    margin-top: 20px; 
+}
+
+/* Controls & Buttons */
+button {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: monospace;
+    transition: 0.3s;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: var(--accent-cyan);
+    color: var(--bg-dark);
+}
+
+/* Feed Lists */
+ul { list-style: none; padding: 0; }
+li { 
+    padding: 8px 0; 
+    border-bottom: 1px dashed rgba(0, 255, 204, 0.2); 
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+    th, td { padding: 8px; font-size: 0.8em; }
+}
