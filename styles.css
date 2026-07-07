@@ -1,7 +1,7 @@
-/* =========================================================
-   HUOKAING THARA BANK - FINANCIAL DASHBOARD V2.0
-   DESIGN SPEC: PROFESSIONAL BANKING LEDGER
-   ========================================================= */
+/* ==========================================================================
+   HUOKAING THARA BANK - FINANCIAL DASHBOARD STYLES
+   VERSION: 2.1 (PHASE 1 COMPLETE / PHASE 2 PREP)
+   ========================================================================== */
 
 :root {
     --bg-dark: #01050e;
@@ -19,6 +19,7 @@ body {
     font-family: var(--font-main);
     margin: 0;
     padding: 40px 20px;
+    line-height: 1.6;
 }
 
 .container {
@@ -54,7 +55,7 @@ h1 {
     color: var(--accent-cyan);
 }
 
-/* Financial Table Styling */
+/* Financial Table Ledger */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -74,7 +75,7 @@ th {
     text-transform: uppercase;
 }
 
-/* Phase Section Styling */
+/* Status Indicators */
 .phase-card {
     border: 1px solid var(--accent-gold);
     padding: 30px;
@@ -82,6 +83,14 @@ th {
     background: rgba(197, 160, 89, 0.05);
 }
 
+.ai-box { 
+    background: #000; 
+    padding: 15px; 
+    border: 1px solid var(--accent-gold); 
+    margin-top: 20px; 
+}
+
+/* Interactive Elements */
 button {
     background: transparent;
     border: 1px solid var(--accent-cyan);
@@ -91,6 +100,7 @@ button {
     font-family: var(--font-main);
     transition: 0.4s;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -98,11 +108,8 @@ button:hover {
     color: var(--bg-dark);
 }
 
-ul { 
-    list-style: none; 
-    padding: 0; 
-}
-
+/* Log Feed */
+ul { list-style: none; padding: 0; }
 li { 
     padding: 10px 0; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
@@ -110,7 +117,7 @@ li {
     color: #b0b0b0;
 }
 
-/* Responsive Table */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .container { padding: 20px; }
     table, thead, tbody, th, td, tr { display: block; }
