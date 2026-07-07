@@ -1,7 +1,7 @@
 /* =========================================================
-   HUOKAING THARA BANK - MODERN OPERATIONAL COMMAND STYLE
-   SPECIFICATION: FINANCIAL MONITORING TERMINAL
-========================================================= */
+   HUOKAING THARA BANK - OPERATIONAL COMMAND STYLE
+   DESIGN SPEC: DARK TERMINAL / FINANCIAL MONITORING
+   ========================================================= */
 
 :root {
     --bg-dark: #01050e;
@@ -9,13 +9,14 @@
     --accent-cyan: #00ffcc;
     --accent-red: #ff3366;
     --accent-gold: #c5a059;
-    --text-color: #00ffcc;
+    --text-glow: 0 0 10px rgba(0, 255, 204, 0.5);
+    --font-main: 'Courier New', Courier, monospace;
 }
 
 body {
     background-color: var(--bg-dark);
-    color: var(--text-color);
-    font-family: 'Courier New', Courier, monospace;
+    color: var(--accent-cyan);
+    font-family: var(--font-main);
     margin: 0;
     padding: 40px 20px;
     line-height: 1.6;
@@ -45,7 +46,7 @@ h1 {
     text-shadow: 0 0 15px rgba(255, 51, 102, 0.4);
 }
 
-h3 { color: var(--accent-gold); }
+h3 { color: var(--accent-gold); margin-bottom: 15px; }
 
 /* Table Component */
 table {
@@ -67,7 +68,7 @@ th {
     font-weight: bold;
 }
 
-/* Operational UI Modules */
+/* UI Operational Modules */
 .success-banner {
     background: rgba(13, 44, 84, 0.6);
     border: 1px solid var(--accent-cyan);
@@ -75,6 +76,7 @@ th {
     margin: 20px 0;
     text-align: center;
     animation: pulse 2s infinite;
+    font-weight: bold;
 }
 
 .phase-card {
@@ -91,16 +93,17 @@ th {
     margin-top: 20px; 
 }
 
-/* Controls & Buttons */
+/* Buttons and Interactions */
 button {
     background: transparent;
     border: 1px solid var(--accent-cyan);
     color: var(--accent-cyan);
     padding: 10px 15px;
     cursor: pointer;
-    font-family: monospace;
+    font-family: var(--font-main);
     transition: 0.3s;
     margin-right: 5px;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -108,7 +111,7 @@ button:hover {
     color: var(--bg-dark);
 }
 
-/* Feed Lists */
+/* Log Feeds Styling */
 ul { list-style: none; padding: 0; }
 li { 
     padding: 8px 0; 
@@ -116,15 +119,16 @@ li {
     font-size: 0.9em;
 }
 
-/* Animations */
+/* Keyframe Animations */
 @keyframes pulse {
     0% { opacity: 1; }
     50% { opacity: 0.8; }
     100% { opacity: 1; }
 }
 
-/* Responsive Design */
+/* Responsive Design (Mobile Friendly) */
 @media (max-width: 600px) {
     .container { padding: 15px; }
+    h1 { font-size: 1.2em; }
     th, td { padding: 8px; font-size: 0.8em; }
 }
