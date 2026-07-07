@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUOKAING THARA BANK | OPERATIONAL CONTROL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,7 +41,7 @@
         <h3 id="monitor-title">⚠️ ការត្រួតពិនិត្យដំណាក់កាលទី ២៖ ការពង្រឹងសុវត្ថិភាពសាយប័រ</h3>
         <p id="monitor-desc"><strong>គោលដៅ៖</strong> ការកាត់បន្ថយហានិភ័យ និងការពង្រឹងសុវត្ថិភាពប្រព័ន្ធបណ្តាញរបស់ធនាគារ។</p>
         
-        <div id="lang-controls">
+        <div id="lang-controls" style="margin: 20px 0;">
             <button onclick="changeLanguage('en')">🇬🇧 EN</button>
             <button onclick="changeLanguage('fr')">🇫🇷 FR</button>
             <button onclick="changeLanguage('de')">🇩🇪 DE</button>
@@ -50,12 +51,18 @@
 
         <div class="ai-box">
             <h4>🤖 វិភាគដោយ AI CORE</h4>
-            <ul id="ai-feed"><li>[SYSTEM]: កំពុងវិភាគសុវត្ថិភាពបណ្តាញ...</li></ul>
+            <ul id="ai-feed">
+                <li>[SYSTEM]: កំពុងវិភាគសុវត្ថិភាពបណ្តាញ...</li>
+            </ul>
         </div>
         
-        <ul id="monitoring-feed" style="margin-top: 20px;"></ul>
+        <ul id="monitoring-feed" style="margin-top: 20px;">
+            <li>[14:26:01] System initializing offensive security protocols...</li>
+        </ul>
     </section>
 </div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
