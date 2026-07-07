@@ -3,62 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUOKAING THARA BANK | OPERATIONAL CONTROL</title>
+    <title>HUOKAING THARA BANK | PHASE 1 FINAL REPORT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>🚨 HUOKAING THARA BANK: របាយការណ៍ប្រតិបត្តិការដំណាក់កាលទី ២</h1>
+        <h1>🚨 HUOKAING THARA BANK: PHASE 1 FINAL SUCCESS REPORT</h1>
         <div class="success-banner">
-            ✅ ការទូទាត់សម្រាប់ "Programmers & Devs" បានបញ្ចប់ដោយជោគជ័យ។ ដំណាក់កាលទី ១៖ សម្រេចបាន ១០០%។
+            ✅ ការងារដំណាក់កាលទី ១ បានបញ្ចប់ដោយជោគជ័យ | Phase 1 Completed Successfully
         </div>
     </header>
 
+    <!-- Detailed Financial Breakdown -->
     <section>
-        <h3>💰 ការត្រួតពិនិត្យការចំណាយលើកម្លាំងពលកម្ម (Labor Disbursement)</h3>
+        <h3>💰 របាយការណ៍ហិរញ្ញវត្ថុ និងកម្លាំងពលកម្ម (Financial & Labor Report)</h3>
         <table id="labor-table">
             <thead>
                 <tr>
                     <th>ផ្នែក (Module)</th>
-                    <th>ស្ថានភាព</th>
-                    <th>ថវិកាដែលបានទូទាត់</th>
+                    <th>ស្ថានភាព (Status)</th>
+                    <th>ថវិកាជួលសរុប (Total Disbursement)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr style="color:#00ffcc;">
-                    <td>អ្នកជំនាញផ្នែក Programmer & Devs</td>
-                    <td>បានទូទាត់រួចរាល់</td>
-                    <td>$30.70B (សរុប)</td>
+                    <td>Programmers & Devs</td>
+                    <td>PAID / បានទូទាត់</td>
+                    <td>$30.70 Billion USD</td>
+                </tr>
+                <tr style="color:#00ffcc;">
+                    <td>Cybersecurity Team</td>
+                    <td>PAID / បានទូទាត់</td>
+                    <td>$37.40 Billion USD</td>
                 </tr>
             </tbody>
         </table>
-        <button onclick="exportToPDF()">📄 ទាញយករបាយការណ៍ជា PDF</button>
+        <p style="font-style: italic; color: #c5a059;">*សរុបការចំណាយដំណាក់កាលទី ១: $68.10 Billion USD</p>
     </section>
 
+    <!-- Monitoring & Communication -->
     <section class="phase-card">
-        <h3 id="monitor-title">⚠️ ការត្រួតពិនិត្យដំណាក់កាលទី ២៖ ការពង្រឹងសុវត្ថិភាពសាយប័រ</h3>
-        <p id="monitor-desc"><strong>គោលដៅ៖</strong> ការកាត់បន្ថយហានិភ័យ និងការពង្រឹងសុវត្ថិភាពប្រព័ន្ធបណ្តាញរបស់ធនាគារ។</p>
+        <h3 id="monitor-title">⚠️ សេចក្តីសង្ខេបប្រតិបត្តិការដំណាក់កាលទី ១ (Phase 1 Summary)</h3>
+        <p id="monitor-desc"><strong>សេចក្តីសង្ខេប៖</strong> ការជួលអ្នកជំនាញ និងការកែសម្រួល Backend API បានសម្រេច ១០០%។</p>
         
         <div id="lang-controls" style="margin: 20px 0;">
-            <button onclick="changeLanguage('en')">🇬🇧 EN</button>
-            <button onclick="changeLanguage('kh')">🇰🇭 KH</button>
-            <button onclick="changeLanguage('fr')">🇫🇷 FR</button>
+            <button onclick="changeLanguage('en')">🇬🇧 ENGLISH</button>
+            <button onclick="changeLanguage('kh')">🇰🇭 ភាសាខ្មែរ</button>
         </div>
 
-        <div class="ai-box">
-            <h4>🤖 វិភាគដោយ AI CORE</h4>
-            <ul id="ai-feed">
-                <li>[SYSTEM]: កំពុងវិភាគសុវត្ថិភាពបណ្តាញ...</li>
-            </ul>
-        </div>
-        
         <ul id="monitoring-feed" style="margin-top: 20px;"></ul>
     </section>
 </div>
-
 <script src="script.js"></script>
-
 </body>
 </html>
